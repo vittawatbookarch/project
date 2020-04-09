@@ -3,16 +3,21 @@ import { Link } from "gatsby"
 
 
 import "../components/style.css"
+import Header from "../components/header"
+
 
 const SecondPage = () => (
 
-  <div className="header">
+  <div>
 
-    <h1>Vittawat Archanainant</h1> 
+    <Header />
+    
+    <Link to="projectA" className="gasf"><img src="../images/IMG_0996.png"/></Link>
 
-    <Link to="/" className="gasf">index </Link>
+    <img src="components/images/img_0996.png"></img>
 
   </div>
 )
 
 export default SecondPage
+

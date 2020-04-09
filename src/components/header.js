@@ -6,13 +6,15 @@ import "../components/style.css"
 
 const Header = () => (
 
-  <div className="header">
+  <body className="header">
 
-    <h1>Vittawat Archanainant</h1> 
+    <Link to="/" className="vittawat"> VITTAWAT ARCHANAINANT</Link>
 
-    <Link to="/" className="gasf">index </Link>
+    <Link to="page-2" className="gasf"> Design </Link>
+    <Link to="page-3" className="gasf"> 3D </Link>
+    <Link to="page-4" className="gasf"> Sound </Link>
 
-  </div>
+  </body>
 )
 
 export default Header
