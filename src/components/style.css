@@ -2,50 +2,83 @@
 
 html {
   font-family: 'Chivo', sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8%;
+
 }
+
+ 
+
+  .box {
+
+    padding:50px;
+    height: 80vh;
+    grid-column: 1 / 3;
+    grid-row: 1;
+    
+  }
 
 .header {
 
     display: flex;
     align-items: flex-end;
-    margin-bottom: 50px;
-    margin-top:50px;
     font-family: lato;
-
+    justify-content: space-between;
+    position: fixed;
+    
 }
+.center {
+
+
+
+} 
+
 
 
 .indexcontent {
 
-    margin-bottom: 40px;
+    margin-bottom: ;
     font-size: 16px;
-    width: 33%;
-    margin-left:32px;
+    max-width: 33%;
+    min-width: 400px;
     color:#515557;
 
 }
 
 body {
     background-color: rgb(240, 240, 240);
+    align-content: space-between;    
+
     
 }
 
 .gasf {
-
-    padding-right: 20px;
-    font-size: 15px;;
-    margin-right: 32px;
-    
    
+    font-size: 15px;
+    margin-right: 20px;
+    color:black;
+    text-decoration: none;
+   
+}
+.gasf:hover {
+
+    color:red;
 }
 
 .vittawat {
 
     font-size: 30px;
     font-weight: 600;
-    width: 50%;
-    padding-right: 50%;
-    margin-left: 32px;
+    color:black;
+    text-decoration: none;
+    mix-blend-mode: lighten;
+
 
 }
 
@@ -53,8 +86,9 @@ body {
 
     font-size: 13px;
     font-weight: 400;
-    margin-left: 40px;
+   
     color:#515557;
+    
     
 }
 
@@ -62,8 +96,126 @@ body {
     
     font-size: 15px;
     font-weight: 600;
-    margin-left: 40px;
+   
     
 }
 
+
+@media only screen and (max-width: 768px) {
+    html {
+      background-color:black;
+    }
+
+    .header {
+       font-size:10px;
+
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    html {
+      background-color: red;
+    }
+
+    .header {
+       font-size:10px;
+
+    
+
+    }
+  }
+
+  .wrapper {
+  display: grid;
+  grid-template-columns: 1fr fr 1fr 1fr;
+  grid-gap: 5px;
+  grid-template-rows: 100px 200px 300px 400px;
+  background-color: yellow;
+}
+.one {
+  grid-column: 1 / 3;
+  grid-row: 1;
+  background-color: white;
+
+}
+.two { 
+  grid-column: 2 / 4;
+  grid-row: 2 / 4;
+  background-color: blue;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.three {
+  grid-column: 1;
+  grid-row: 3 / 5;
+  background-color: green;
+
+}
+.four {
+  grid-column: 3;
+  grid-row: 3;
+  background-color: magenta;
+
+}
+.five {
+  grid-column: 2;
+  grid-row: 4;
+  background-color: mediumaquamarine;
+
+}
+.six {
+  grid-column: 3;
+  grid-row: 4;
+  background-color: blanchedalmond;
+
+}
+
+.ImgA {
+
+    z-index: 1;
+    background-color: rgba(0,255,255,.1);
+    mix-blend-mode: screen;
+
+}
+
+h1 {
+
+    position: absolute;
+    z-index: 3;
+    background-color: rgb(26, 26, 26);
+    mix-blend-mode: multiply;
+    color:white;
+}
+
+.button {
+
+    position: absolute;
+    width: 164px;
+    height: 47px;
+    
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #C4C4C4;
+    border-radius: 20px;
+    
+    
+    /* aaaaa */
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    
+    color: #000000;
+    
+}
+
+.button:hover {
+
+    color:red;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top:2px;
+}
 
